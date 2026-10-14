@@ -1,4 +1,4 @@
-import pygame
+import pygame  # type: ignore[import]
 import random
 
 pygame.init()
@@ -81,7 +81,8 @@ while running:
         pygame.draw.rect(screen, GREEN, (pos[0], pos[1], CELL_SIZE, CELL_SIZE))
 
     # Draw food
-    pygame.draw.rect(screen, RED, (food_pos[0], food_pos[1], CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(
+        screen, RED, (food_pos[0], food_pos[1], CELL_SIZE, CELL_SIZE))
 
     pygame.display.flip()
 
